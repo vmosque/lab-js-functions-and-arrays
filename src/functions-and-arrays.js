@@ -47,7 +47,7 @@ const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbers2) {
   if (numbers2.length === 0) {
-    return 0; // 🔥 Aquí el cambio
+    return 0;
   }
 
   let sum = 0;
@@ -74,18 +74,15 @@ const words2 = [
 ];
 
 function doesWordExist(words, searchWord) {
-  // Si el array está vacío → debe devolver null
   if (words.length === 0) {
     return null;
   }
 
-  // Recorrer el array para buscar la palabra
   for (let i = 0; i < words.length; i++) {
     if (words[i] === searchWord) {
       return true; // La palabra existe
     }
   }
 
-  // Si no la encontró en todo el array → false
   return false;
 }
